@@ -1,5 +1,6 @@
 ## HISTORY GENERATOR PROGRAM
 **Overview**
+
 The History Generator program rebuilds the history of transactions by taking the current inventory, the reorder level and transactions then generating the history by back tracking through the them. The program creates the products, its properties and assumption variables in the product object and stores the daily information in the day records objects then then permutates though them to generate to the history of those products. 
 
 ## File and External Data
@@ -21,8 +22,11 @@ The first starting inventory is the current units in stock the sales are added t
  - The Program needs the Purchase Order table in the database to Store the results of the Program
  - The program assumes the re ordered days will always end on the reorder level so this could affect the accuracy of the generated history.
 
+
+
 ## Inventory Control
 **Overview**
+
 The inventory control program implements the inventory control interface. The DB object connects to the database when it is initialized and when the ship_order, reissue_orders or receive_orders methods are called the  methods starts a connection and runs the queries to carry out the feature.
 ## File and External Data
 **Main.java** This is the main class where all the objects are called, and the input are accepted and validated.
